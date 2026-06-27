@@ -14,6 +14,12 @@ public class Person {
         this.lastName = "Doe";
     }
 
+    public Person(String name, String lastName, int age) {
+        this.name = "John";
+        this.lastName = "Doe";
+        this.age = age;
+    }
+
     public Person(String name) {
         this.name = name;
     }
@@ -51,8 +57,8 @@ public class Person {
         this.age = age;
     }
 
-    public void age() {
-        this.age++;
+    public int addAge() {
+       return this.age++;
     }
 
     public Person getPartner() {
